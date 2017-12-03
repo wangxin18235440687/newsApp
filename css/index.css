@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+.waiting{
+    width: 100%;
+    display: none;
+}
+section{
+    width: 100%;
+    height: 0.8rem;
+    box-sizing: border-box;
+    background: #d33e3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section input{
+    width: 80%;
+    height: 60%;
+    outline: none;
+    border: none;
+    text-indent: 1em;
+    box-sizing: border-box;
+    border-radius: 0.08rem;
+    padding-top: 0.02rem;
+}
+#wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.6rem;
+    border-bottom: 0.01rem solid #666;
+    position: relative;
+    overflow: hidden;
+}
+#scroller{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 11.5rem;
+    height: 100%;
+
+}
+#scroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#scroller li{
+    float: left;
+    width: 0.8rem;
+    height: 100%;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.6rem;
+}
+#scroller li.active{
+    color: red;
+}
+#content ul{
+    width: 100%;
+}
+#content ul .list{
+    margin-top: 0.1rem;
+    display: flex;
+    height: 1.3rem;
+    width: 100%;
+}
+#content ul .list .left{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.05rem;
+    overflow: hidden;
+}
+#content ul .list .left img{
+    width: 100%;
+}
+#content ul .list .right{
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.05rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+}
+#content ul .list .right .title{
+    width: 100%;
+    font-size: 0.16rem;
+    color: #333333;
+}
+#content ul .list .right .from{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-item:ceter;
+}
+#content ul .list .right .from span{
+    display: block;
+    font-size: 0.10rem;
+    color: #666666;
+}
+#content ul .noimg{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.4rem 0.2rem;
+    box-sizing: border-box;
+}
+#content ul .noimg .title-no{
+    font-size: 0.2rem;
+    color: #333333;
+}
+#content ul .noimg .from-no{
+    overflow: hidden;
+}
+#content ul .noimg .from-no span{
+    float: left;
+    font-size: 0.1rem;
+    color: #666666;
+}
+.more{
+    width: 100%;
+    height: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.05rem;
+    box-sizing: border-box;
+   
+}
+.more .load{
+    height: 50%;
+    font-size: 0.16rem;
+    box-sizing: border-box;
+}
