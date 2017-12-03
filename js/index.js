@@ -2,7 +2,7 @@ $(function () {
     var myScroll;
     myScroll = new IScroll('#wrapper', { scrollX: true, scrollY: false, mouseWheel: true });
     $.ajax({
-        url:'http://api.jisuapi.com/news/channel?appkey=b0cc72e92512713a',
+        url:'https://api.jisuapi.com/news/channel?appkey=b0cc72e92512713a',
         dataType:'jsonp',
         success:function (res) {
             let result=res.result;
@@ -33,7 +33,7 @@ $(function () {
     })
     function render(channel,start,num) {
         $.ajax({
-            url:`http://api.jisuapi.com/news/get?channel=${channel}&start=${start}&num=${num}&appkey=ca4fded345f068da`,
+            url:`https://api.jisuapi.com/news/get?channel=${channel}&start=${start}&num=${num}&appkey=ca4fded345f068da`,
             dataType:'jsonp',
             success:function (res) {
                 let resultContent=res.result.list;
