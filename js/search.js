@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-12-05 10:31:08
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-06 00:04:55
+* @Last Modified time: 2017-12-06 01:16:51
 */
 $(document).ready(function() {
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
     function render(keyword) {
         if (keyword!=''){
             $.ajax({
-                url: `http://api.jisuapi.com/news/search?keyword=${keyword}&appkey=b0cc72e92512713a`,
+                url: `https://api.jisuapi.com/news/search?keyword=${keyword}&appkey=b0cc72e92512713a`,
                 dataType:'jsonp',
                 beforeSend:function(){
                 $('#zhao').show();
